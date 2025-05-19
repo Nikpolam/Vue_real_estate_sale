@@ -18,12 +18,9 @@
 <script setup>
 const menuItems = [
   { title: 'Главная', route: '/' },
-<<<<<<< HEAD
   { title: 'Квартиры', route: '/apartments' },
   { title: 'Дома', route: '/houses' },
   { title: 'Коммерческая', route: '/commercial' },
-=======
->>>>>>> 70960cc3cec1f8880370921e35fdc5f17d629cb5
   { title: 'Контакты', route: '/contacts' }
 ]
 </script>
