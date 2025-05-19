@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: real-estate-app
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn real_estate_backend.wsgi:application"
+    region: oregon
+    plan: free
+    branch: main
+    autoDeploy: true
