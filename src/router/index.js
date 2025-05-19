@@ -6,11 +6,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../views/HomePage.vue'
 import ContactsPage from '../views/ContactsPage.vue'
 import HousesPage from '../views/HousesPage.vue'
-<<<<<<< HEAD
 import ApartmentsPage from '../views/ApartmentsPage.vue'
 import CommercialPage from '../views/CommercialPage.vue'
-=======
->>>>>>> 70960cc3cec1f8880370921e35fdc5f17d629cb5
 
 const routes = [
   {
@@ -27,7 +24,6 @@ const routes = [
     path: '/houses',
     name: 'houses',
     component: HousesPage
-<<<<<<< HEAD
   },
   {
     path: '/apartments',
@@ -38,8 +34,6 @@ const routes = [
     path: '/commercial',
     name: 'commercial',
     component: CommercialPage
-=======
->>>>>>> 70960cc3cec1f8880370921e35fdc5f17d629cb5
   }
 ]
 
