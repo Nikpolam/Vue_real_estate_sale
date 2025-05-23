@@ -9,9 +9,8 @@ npm run build
 
 # 3. Копировать ассеты в Django static/
 mkdir -p static/assets
-mkdir -p real_estate_backend/api/templates
 cp -r dist/assets/* static/assets/
-cp dist/index.html templates/index.html
+cp dist/index.html real_estate_backend/api/templates/index.html
 
 # 4. Собрать статику Django
 python manage.py collectstatic --noinput
