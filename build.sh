@@ -1,19 +1,17 @@
 #!/usr/bin/env bash
 
-# 1. Установить зависимости (если нужно)
+# 1. Установить Python зависимости
 pip install -r requirements.txt
 
-# 2. Перейти в папку Vue и собрать фронтенд
+# 2. Установить Node-зависимости и собрать Vue
 npm install
 npm run build
 
-# 3. Вернуться и скопировать результат сборки в Django
-cd ..
+# 3. Копировать ассеты в Django static/
 rm -rf static/assets
-cp -r dist/assets static/
-
-# 4. Копировать index.html в templates
-mkdir -p templates
+mkdir -p static/assets
+cp -r dist/assets/* static/assets/
 cp dist/index.html templates/index.html
 
+# 4. Собрать статику Django
 python manage.py collectstatic --noinput
