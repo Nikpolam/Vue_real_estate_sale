@@ -4,7 +4,7 @@
 pip install -r requirements.txt
 
 # 2. Перейти в папку Vue и собрать фронтенд
-
+cd Vue_real_estate_sale-main || exit
 npm install
 npm run build
 
