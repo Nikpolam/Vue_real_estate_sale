@@ -8,7 +8,6 @@ npm install
 npm run build
 
 # 3. Копировать ассеты в Django static/
-rm -rf static/assets
 mkdir -p static/assets
 mkdir -p real_estate_backend/api/templates
 cp -r dist/assets/* static/assets/
